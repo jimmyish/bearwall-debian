@@ -1,0 +1,75 @@
+linuxserver-firewall (0.65) unstable; urgency=low
+
+  * Add man page (thanks to John McPherson)
+  * Update README.Debian to refer to documentation 
+
+ -- Craig Box <packages@itpartners.co.nz>  Thu, 19 May 2005 10:45:33 +1200
+
+linuxserver-firewall (0.64) unstable; urgency=low
+
+  * Remove ()s from sourcing rules. 
+
+ -- Craig Box <packages@itpartners.co.nz>  Mon,  9 May 2005 13:37:13 +1200
+
+linuxserver-firewall (0.63) unstable; urgency=low
+
+  * Set LANG=C in firewall.functions in order to work around
+    bash accepting lower case letters in [A-Z].
+
+    Backed out some changes made to fix this.
+
+ -- Craig Box <packages@itpartners.co.nz>  Thu,  5 May 2005 14:00:10 +1200
+
+linuxserver-firewall (0.62) unstable; urgency=low
+
+  * Package for Ubuntu.
+
+ -- Craig Box <packages@itpartners.co.nz>  Thu,  5 May 2005 10:46:41 +1200
+
+linuxserver-firewall (0.61) unstable; urgency=low
+
+  * Fixed $CONFDIR in firewall.functions such that the per-if rules
+    are loaded.
+  * Set all rules executable.
+
+ -- Craig Box <packages@itpartners.co.nz>  Wed,  6 Apr 2005 11:42:04 +1200
+
+linuxserver-firewall (0.6) unstable; urgency=low
+
+  * Rebuild package due to loss of build source. 
+
+ -- Craig Box <package@itpartners.co.nz>  Mon,  4 Apr 2005 14:56:45 +1200
+
+linuxserver-firewall (0.5-REL3) unstable; urgency=low
+
+  * Updated to upstream REL3 version.
+  * Hardcoded more details (bad) 
+
+ -- Craig Box <packages@itpartners.co.nz>  Thu, 10 Jun 2004 11:47:25 +1200
+
+linuxserver-firewall (0.3) unstable; urgency=low
+
+  * Added support for TCP ECN disabling and IP accounting 
+
+ -- Craig Box <packages@itpartners.co.nz>  Mon, 19 May 2003 19:40:53 +1200
+
+linuxserver-firewall (0.2.2) unstable; urgency=low
+
+  * Now sets +x correctly on rulesets (makes running the firewall
+    much less painful)
+
+ -- Craig Box <packages@itpartners.co.nz>  Mon, 19 May 2003 19:33:07 +1200
+
+linuxserver-firewall (0.2) unstable; urgency=low
+
+  * Debian init script
+  * Moved classes.d and interfaces.d into /etc 
+
+ -- Craig Box <packages@itpartners.co.nz>  Mon,  5 May 2003 16:23:31 +1200
+
+linuxserver-firewall (0.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Craig Box <packages@jane.meta.net.nz>  Tue, 22 Apr 2003 04:32:24 +1200
+

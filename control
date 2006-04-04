@@ -1,0 +1,19 @@
+Source: linuxserver-firewall
+Section: net
+Priority: optional
+Maintainer: Craig Box <debian@itpartners.co.nz>
+Build-Depends: debhelper (>> 3.0.0)
+Standards-Version: 3.5.2
+
+Package: linuxserver-firewall
+Architecture: all
+Depends: iptables (>= 1.2)
+Recommends: iproute
+Conflicts: shorewall, firewall-easy, ipmasq, knetfilter
+Description: firewall component for the Linux Server project
+ The Linux Server Firewall is an easily configured, extensible
+ firewall designed for small to medium enterprise - but scalable
+ to any number of users.
+ .
+ For more information, see the authors original hints at
+ http://www.wlug.org.nz/PerrysFirewallingScript.

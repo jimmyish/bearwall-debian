@@ -1,0 +1,14 @@
+linuxserver-firewall for Debian
+-------------------------------
+
+Rebuilt from scratch after a development machine hard drive died.
+
+This package includes the REL3 release from Sourceforge, plus modifications
+to fix a bug introduced in recent bash versions.
+
+It also includes man pages, thanks to John McPherson.
+Try 'man 8 linuxserver-firewall'.
+
+For more information, see http://www.wlug.org.nz/PerrysFirewallingScript.
+
+ -- Craig Box <packages@itpartners.co.nz>, Tue, 04 Apr 2005 14:45:51 +1200
