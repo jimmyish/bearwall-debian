@@ -2,7 +2,8 @@ Source: linuxserver-firewall
 Section: net
 Priority: optional
 Maintainer: Craig Box <debian@itpartners.co.nz>
-Build-Depends: debhelper (>> 3.0.0)
+Uploaders: Matt Brown <debian@mattb.net.nz>
+Build-Depends: debhelper (>> 4.0.0)
 Standards-Version: 3.6.2
 
 Package: linuxserver-firewall

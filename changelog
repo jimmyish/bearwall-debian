@@ -1,3 +1,12 @@
+linuxserver-firewall (1.0-2) unstable; urgency=low
+
+  * Made package lintian/linda compliant
+  * Added myself to Uploaders to avoid NMU warnings from lintian
+  * Package must always be built from tarball, not svn working dir to avoid
+    svn control files in the source package
+
+ -- Matt Brown <debian@mattb.net.nz>  Fri,  7 Apr 2006 10:09:36 +1200
+
 linuxserver-firewall (1.0-1) unstable; urgency=low
 
   * New upstream release
