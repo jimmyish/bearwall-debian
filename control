@@ -3,8 +3,8 @@ Section: net
 Priority: optional
 Maintainer: Craig Box <debian@itpartners.co.nz>
 Uploaders: Matt Brown <debian@mattb.net.nz>
-Build-Depends: debhelper (>> 4.0.0)
-Standards-Version: 3.6.2
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.1
 
 Package: linuxserver-firewall
 Architecture: all

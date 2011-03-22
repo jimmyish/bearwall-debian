@@ -1,3 +1,10 @@
+linuxserver-firewall (1.05-1) unstable; urgency=low
+
+  * New upstream release 
+  * New LSB initscript
+
+ -- Jamie Curtis <jamie@wand.net.nz>  Thu, 10 Mar 2011 17:16:19 +1300
+
 linuxserver-firewall (1.0-2) unstable; urgency=low
 
   * Made package lintian/linda compliant
