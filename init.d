@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 ### BEGIN INIT INFO
 # Provides:          firewall
 # Required-Start:    $remote_fs $syslog $network
@@ -34,7 +34,7 @@ set -e
 case "$1" in
   start|restart|force-reload)
 	echo -n "Starting $DESC: $NAME"
-	$DAEMON &>/dev/null
+	$DAEMON > /dev/null 2>&1
 	if [ -x $IPAC ]; then
 	    $IPAC -S
 	fi
