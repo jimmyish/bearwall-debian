@@ -46,8 +46,8 @@ install: build
 	dh_clean -k
 	dh_installdirs
 
-	# Add here commands to install the package into debian/linuxserver-firewall.
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/linuxserver-firewall BINDIR=/usr/sbin SHARDIR=/usr/share ETCDIR=/etc
+	# Add here commands to install the package into debian/bearwall.
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/bearwall BINDIR=/usr/sbin SHARDIR=/usr/share ETCDIR=/etc
 
 
 # Build architecture-independent files here.

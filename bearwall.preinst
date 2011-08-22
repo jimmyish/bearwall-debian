@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+# Migrate configuration from old linuxserver-firewall directory if present.
+migrate_config() {
+    if [ ! -d /etc/bearwall -a -d /etc/linuxserver-firewall ]; then
+        cp -a /etc/linuxserver-firewall /etc/bearwall
+        echo "Moved firewall config from /etc/linuxserver-firewall -> /etc/bearwall"
+    fi
+}
+
+case "$1" in
+  install)
+    migrate_config
+    ;;
+  *)
+    echo "preinst called with unknown argument \`$1'" >&2
+    exit 0
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

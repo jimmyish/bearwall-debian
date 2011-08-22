@@ -1,4 +1,4 @@
-Source: linuxserver-firewall
+Source: bearwall
 Section: net
 Priority: optional
 Maintainer: Craig Box <debian@itpartners.co.nz>
@@ -6,14 +6,16 @@ Uploaders: Matt Brown <debian@mattb.net.nz>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.1
 
-Package: linuxserver-firewall
+Package: bearwall
 Architecture: all
 Depends: iptables (>= 1.2)
 Recommends: iproute
-Conflicts: shorewall, firewall-easy, ipmasq, knetfilter
+Provides: linuxserver-firewall
+Replaces: linuxserver-firewall
+Conflicts: linuxserver-firewall, shorewall, firewall-easy, ipmasq, knetfilter
 Description: firewall component for the Linux Server project
- The Linux Server Firewall is an easily configured, extensible
- firewall designed for small to medium enterprise - but scalable
+ Bearwall (aka Perry's Firewalling Script) is an easily configured, extensible
+ firewall designed for small to medium enterprise use - but scalable
  to any number of users.
  .
  For more information, see the authors original hints at

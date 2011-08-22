@@ -1,3 +1,15 @@
+bearwall (1.06-0) UNRELEASED; urgency=low
+
+  * UNRELEASED
+  * New upstream release.
+    - Rename package to bearwall.
+    - Supports linux 3.0.
+  * Update packaging for new name, etc.
+  * Add preinst script to automatically copy existing configs from old
+    /etc/linuxserver-firewall directory to new /etc/bearwall directory.
+
+ -- Matt Brown <mattb@debian.org>  Mon, 22 Aug 2011 17:02:56 +0100
+
 linuxserver-firewall (1.05-1) unstable; urgency=low
 
   * New upstream release 
