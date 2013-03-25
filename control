@@ -1,7 +1,7 @@
 Source: bearwall
 Section: net
 Priority: optional
-Maintainer: Craig Box <debian@itpartners.co.nz>
+Maintainer: Brad Cowie <brad@gizmoguy.net.nz>
 Uploaders: Matt Brown <debian@mattb.net.nz>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.1
