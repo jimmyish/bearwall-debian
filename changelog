@@ -1,3 +1,13 @@
+bearwall (1.07-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+    - Adds bearwall configuration file.
+    - Supports NFLOG.
+  * Package now depends on rsyslog and logrotate.
+  * Added a postinst and postrm script for restarting rsyslog.
+
+ -- Brad Cowie <brad@gizmoguy.net.nz>  Fri, 22 Mar 2013 15:22:17 +1300
+
 bearwall (1.06-0) UNRELEASED; urgency=low
 
   * UNRELEASED
