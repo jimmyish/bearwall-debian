@@ -1,4 +1,4 @@
-bearwall (1.07-1) UNRELEASED; urgency=low
+bearwall (1.07-1) squeeze; urgency=low
 
   * New upstream release.
     - Adds bearwall configuration file.
