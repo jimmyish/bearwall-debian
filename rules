@@ -55,8 +55,8 @@ install: build
 	mkdir -p $(CURDIR)/debian/bearwall/var/cache/bearwall
 
 	# Add here commands to install the package into debian/bearwall.
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/bearwall BINDIR=/usr/sbin SHARDIR=/usr/share ETCDIR=/etc DATADIR=/var/cache
-	$(MAKE) install-fragments DESTDIR=$(CURDIR)/debian/bearwall BINDIR=/usr/sbin SHARDIR=/usr/share ETCDIR=/etc DATADIR=/var/cache
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/bearwall BINDIR=/usr/sbin SHARDIR=/usr/share ETCDIR=/etc CACHEDIR=/var/cache
+	$(MAKE) install-fragments DESTDIR=$(CURDIR)/debian/bearwall BINDIR=/usr/sbin SHARDIR=/usr/share ETCDIR=/etc CACHEDIR=/var/cache
 
 # Build architecture-independent files here.
 binary-indep: build install
