@@ -51,8 +51,11 @@ install: build
 	mkdir -p $(CURDIR)/debian/bearwall/etc/rsyslog.d
 	mkdir -p $(CURDIR)/debian/bearwall/etc/logrotate.d
 
+	# Make data cache directory
+	mkdir -p $(CURDIR)/debian/bearwall/var/cache/bearwall
+
 	# Add here commands to install the package into debian/bearwall.
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/bearwall BINDIR=/usr/sbin SHARDIR=/usr/share ETCDIR=/etc
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/bearwall BINDIR=/usr/sbin SHARDIR=/usr/share ETCDIR=/etc DATADIR=/var/cache
 
 # Build architecture-independent files here.
 binary-indep: build install
