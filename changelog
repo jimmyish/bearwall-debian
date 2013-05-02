@@ -1,3 +1,13 @@
+bearwall (1.08-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+    - Adds new firewall load modes.
+    - Doesn't hide as many errors.
+    - Adds a new debug mode.
+  * Fixes Wheezy logrotate bug
+
+ -- Brad Cowie <brad@gizmoguy.net.nz>  Fri, 03 May 2013 10:13:16 +1200
+
 bearwall (1.07-1) UNRELEASED; urgency=low
 
   * New upstream release.
