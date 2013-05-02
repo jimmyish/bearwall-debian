@@ -2,6 +2,8 @@
 # Sample debian/rules that uses debhelper.
 # GNU copyright 1997 to 1999 by Joey Hess.
 
+include /usr/share/quilt/quilt.make
+
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
@@ -20,7 +22,7 @@ configure-stamp:
 	touch configure-stamp
 
 
-build: build-stamp
+build: patch build-stamp
 
 build-stamp: configure-stamp 
 	dh_testdir
@@ -30,7 +32,7 @@ build-stamp: configure-stamp
 
 	touch build-stamp
 
-clean:
+clean: unpatch
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
