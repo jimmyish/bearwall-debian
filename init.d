@@ -32,7 +32,7 @@ set -e
 case "$1" in
   start|restart|force-reload)
 	echo -n "Starting $DESC: $NAME"
-	$DAEMON > /dev/null 2>&1
+	$DAEMON > /dev/null
 	if [ -x $IPAC ]; then
 	    $IPAC -S
 	fi
