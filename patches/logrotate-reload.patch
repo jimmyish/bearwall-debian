@@ -1,8 +1,8 @@
 Make logrotate configuration fragment use the reload action instead of
 rotate for older rsyslog versions.
 
---- a//logrotate	2013-04-30 14:56:23.000000000 +1200
-+++ b//logrotate	2013-04-30 14:57:42.000000000 +1200
+--- a/src/logrotate	2013-04-30 14:56:23.000000000 +1200
++++ b/src/logrotate	2013-04-30 14:57:42.000000000 +1200
 @@ -8,6 +8,6 @@
  	delaycompress
  	sharedscripts
