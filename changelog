@@ -1,3 +1,13 @@
+bearwall (1.08-1~bpo0) squeeze; urgency=low
+
+  * New upstream release.
+    - Adds new firewall load modes.
+    - Doesn't hide as many errors.
+    - Adds a new debug mode.
+  * Fixes Wheezy logrotate bug
+
+ -- Brad Cowie <brad@gizmoguy.net.nz>  Fri, 10 May 2013 14:09:58 +1200
+
 bearwall (1.07-1) squeeze; urgency=low
 
   * New upstream release.
