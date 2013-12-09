@@ -39,30 +39,7 @@ case "$1" in
 	echo "."
 	;;
   stop)
-	echo -n "Flushing ipv4 firewall:"
-	cat /proc/net/ip_tables_names | while read table; do
-		echo -n " $table"
-		/sbin/iptables -t $table --flush
-		/sbin/iptables -t $table --delete-chain
-		# Set everything to accept
-		/sbin/iptables -t $table -nL | grep ^Chain | awk '{print $2}' |
-			while read chain; do
-				/sbin/iptables -t $table --policy $chain ACCEPT
-			done
-	done
-    echo "."
-	echo -n "Flushing ipv6 firewall:"
-	cat /proc/net/ip6_tables_names | while read table; do
-		echo -n " $table"
-		/sbin/ip6tables -t $table --flush
-		/sbin/ip6tables -t $table --delete-chain
-		# Set everything to accept
-		/sbin/ip6tables -t $table -nL | grep ^Chain | awk '{print $2}' |
-			while read chain; do
-				/sbin/ip6tables -t $table --policy $chain ACCEPT
-			done
-	done
-	echo "."
+    $DAEMON -f
 	;;
   panic)
 	echo -n "Flushing ipv4 firewall:"
