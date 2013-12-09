@@ -1,3 +1,11 @@
+bearwall (1.09-1~bpo0) squeeze; urgency=low
+
+  * New upstream release.
+    - Fixes NFLOG bug.
+    - Fixes init script bug where ip6tables isn't flushed.
+
+ -- Brad Cowie <brad@gizmoguy.net.nz>  Mon, 09 Dec 2013 17:31:33 +1300
+
 bearwall (1.08-1~bpo0) squeeze; urgency=low
 
   * New upstream release.
