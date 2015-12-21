@@ -1,3 +1,11 @@
+bearwall (1.10-1~bpo0) squeeze; urgency=low
+
+  * New upstream release.
+   - Add support for linux kernel >=4
+   - Fixes labelling error in documentation
+
+ -- Brad Cowie <brad@gizmoguy.net.nz>  Tue, 22 Dec 2015 10:08:19 +1300
+
 bearwall (1.09-1~bpo0) squeeze; urgency=low
 
   * New upstream release.
