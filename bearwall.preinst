@@ -10,7 +10,7 @@ migrate_config() {
 }
 
 case "$1" in
-  install)
+  install|upgrade)
     migrate_config
     ;;
   *)
