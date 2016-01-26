@@ -1,0 +1,12 @@
+[Unit]
+Description=Bearwall (aka Perry's Firewall Script)
+Before=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/etc/init.d/bearwall start
+ExecStop=/etc/init.d/bearwall stop
+
+[Install]
+WantedBy=multi-user.target
