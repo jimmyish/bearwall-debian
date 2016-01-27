@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Brad Cowie <brad@gizmoguy.net.nz>
 Uploaders: Matt Brown <debian@mattb.net.nz>
-Build-Depends: debhelper (>= 8.0.0), lsb-release
+Build-Depends: debhelper (>= 8.0.0), dh-systemd, lsb-release
 Standards-Version: 3.9.1
 
 Package: bearwall
