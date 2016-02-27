@@ -1,3 +1,11 @@
+bearwall (1.11-1~bpo0) squeeze; urgency=low
+
+  * New upstream release.
+   - Add support for systemd init system
+   - Fixes issue where not all NAT modules are loaded
+
+ -- Brad Cowie <brad@gizmoguy.net.nz>  Sat, 27 Feb 2016 16:34:05 +1300
+
 bearwall (1.10-1~bpo0) squeeze; urgency=low
 
   * New upstream release.
