@@ -9,7 +9,7 @@ Standards-Version: 3.9.1
 Package: bearwall
 Architecture: all
 Depends: ${misc:Depends}, iptables (>= 1.2), rsyslog, logrotate
-Recommends: iproute
+Recommends: iproute2
 Provides: linuxserver-firewall
 Replaces: linuxserver-firewall
 Conflicts: linuxserver-firewall, shorewall, firewall-easy, ipmasq, knetfilter
