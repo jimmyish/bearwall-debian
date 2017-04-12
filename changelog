@@ -1,3 +1,9 @@
+bearwall (1.11-2) UNRELEASED; urgency=low
+
+  * Suggest iproute2 instead of iproute.
+
+ -- Brad Cowie <brad@gizmoguy.net.nz>  Wed, 12 Apr 2017 22:40:40 +1300
+
 bearwall (1.11-1) UNRELEASED; urgency=low
 
   * New upstream release.
